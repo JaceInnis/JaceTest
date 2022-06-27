@@ -8,10 +8,9 @@ tid = function(x = 1, arg = NA){
     tem[i] = tem[i]+i
   }
   if(!is.na(arg)){
-   tem = last(tem)
+   tem = dplyr::last(tem)
   }
 
   return(tem)
 }
-
 
